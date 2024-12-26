@@ -797,59 +797,33 @@ button:hover {
     background-color: #45a049;
 }
 
-.affiliation-section {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: #lelele;
-        }
+/*-----Whatsapp Widget-----*/
+#whatsapp-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    z-index: 1000;
+    
+}
 
-        .affiliation-text {
-            flex: 1;
-            padding: 20px;
-        }
+#whatsapp-link img {
+    width: 65px;
+    height: 65px;
+}
 
-        .affiliation-text h1 {
-            font-size: 2.5rem;
-			margin: 0;
-			color: black;
-			text-align: left;
-        }
+/*-----Contact Widget-----*/
+#contact-widget {
+    position: fixed;
+    bottom: 80px;
+    right: 15px;
+    z-index: 1000;
+    
+}
 
-        .affiliation-text p {
-            font-size: 1.2rem;
-			margin: 0 0 1.5rem;
-			color: #555;
-        }
-
-        .affiliation-text .enquire-button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-        }
-
-        .affiliation-text .enquire-button:hover {
-            background-color: #45a049;
-        }
-
-        .affiliation-image {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .affiliation-image img {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            border-radius: 8px;
-        }
-
+#contact-link img {
+    width: 65px;
+    height: 65px;
+}
 footer {
     text-align: center;
     padding: 20px;
