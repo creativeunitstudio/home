@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="hamburger" id="hamburger">☰</div>
+		<a href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" class="logo"></a>
+        
+    </header>
+	
+    <section class="hero"></section>
+  <section class="content-section">
+    <div class="content-left">
+      <h1>Grow Your Business With Creative Designs</h1>
+    </div>
+    <div class="content-right">
+      <p>We offer a wide range of graphic design packages, to meet your visuals needs at an affordable
+	  price, and all our designs are made possible and quickly to meet you deadlines.</p>
+      <button class="shop-now-btn">Enquire</button>
+    </div>
+  </section>
+		
+    <nav class="menu" id="menu">
+        <div class="close" id="close">&times;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="logos.html">Logo Designs</a></li>
+            <li><a href="posters.html">Poster Designs</a></li>
+			<li><a href="websites.html">Websites Designs</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#promotions">Promotions</a></li>
+			<li><a href="#contactForm">Contact Us</a></li>
+			<li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+		<!---REMAINS HIDDEN--->
+        <section class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search products..." oninput="filterProducts()">
+    </section>
+		<section class="search-results" id="searchResults">
+    <!-- Dynamic search results will be displayed here -->
+		</section>
+
+             <!-- Features Section -->
+        <section class="features">
+        <h2>Gallery Categories</h2>
+        <div class="container">
+        <div class="feature-item">
+            <h3>Posters</h3>
+			<a href="posters.html">
+            <img src="assets/img/posters.jpg" alt="Posters" class="feature-image"></a>
+        </div>
+        <div class="feature-item">
+            <h3>Logos</h3>
+			<a href="logos.html">
+            <img src="assets/img/logos.jpg" alt="Logos" class="feature-image"></a>
+        </div>
+        <div class="feature-item">
+            <h3>Websites</h3>
+			<a href="websites.html">
+            <img src="assets/img/websites.jpg" alt="Websites" class="feature-image"></a>
+        </div>
+        </div>
+        </section>
+	
+		<!-- About-Us Section -->
+		 <section id="about-us" class="about-us">
+    <div class="container-about">
+      <div class="about-content">
+        <div class="about-img">
+          <img src="homepage/aboutus.jpg" alt="Our Team" />
+        </div>
+        <div class="about-text">
+          <h1>Drive Softwares</h1>
+          <p>Transform Your Music Production Game | Explore Our Collection of Premium Hard Drives and USB Drives Fully Loaded with the Best Music Software and Tools. 
+			Perfect for Producers, DJs, and Creatives Ready to Level Up Their Sound Library and Workflow.
+          </p>
+          <p>
+            Elevate Your Creativity with Every Click to Streamline Your Workflow. 
+			Whether You’re a Producer, DJ, or Music Creator, Access the Tools You Need to Bring Your Vision to Life.
+          </p>
+		  <a href="drivebundles.html">
+          <button class="btn">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+		<!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+  <div class="container-testimonials">
+    <h1>What Our Customers Say</h1>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"The hard drive I purchased was a game-changer. 
+		It came preloaded with all the essential music software I needed to level up my production workflow. 
+		Fast, reliable, and efficient—highly recommend!"</p>
+        <h4>- Jordan M., Music Producer.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"These software programs have completely transformed the way I produce music. 
+		The variety, quality, and ease of use are unmatched. It feels like having a full studio at my fingertips!"</p>
+        <h4>- Sbusiso L., Aspiring Music Creator.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I couldn’t believe how quickly my order arrived! I placed my order, and it was at my doorstep before I knew it. 
+		The shipping was lightning-fast, and the drive itself works perfectly. Amazing service all around!"</p>
+        <h4>- Steven S.</h4>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+    </div>
+  </div>
+</section>
+
+		<!-- Contact Section -->
+<section class="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Fill out the form below or connect with us on social media.</p>
+        
+    <form class="contact-form" id="contactForm">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="Your Contact Number" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Your Address" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <button type="button" class="btn" onclick="sendMessage()">Send Message</button>
+    </form>
+
+        <!-- Social Media Links -->
+        <div class="social-media">
+            <h3>Connect with us</h3>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="graphics/websites/fitness_website/assets/img/icons/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://youtube.com" target="_blank" aria-label="YouTube"><img src="graphics/websites/fitness_website/assets/img/icons/youtube.png" alt="YouTube"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+			<!-- FAQ Sectin -->
+	<h1>Frequently Asked Questions (FAQs)</h1>
+	<div id="faqs">
+    <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(0)">
+                <span>What is your return policy?</span>
+                <span>&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                We accept returns within 30 days of purchase. Items must be unworn, unwashed, and in their original packaging. Please contact customer service to initiate your return.
+            </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">
+                <span>How long does shipping take?</span>
+                <span>&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                Standard delivery takes 3-5 business days. Expedited shipping options are available at checkout for faster delivery.
+            </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">
+                <span>Do you offer international shipping?</span>
+                <span>&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                Yes, we offer international shipping to most countries. Shipping fees and estimated delivery times vary by location and will be shown during checkout.
+            </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">
+                <span>How can I track my order?</span>
+                <span>&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                Once your order is shipped, you will receive a confirmation email with a tracking number and a link to track your package.
+            </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">
+                <span>Do you have physical store locations?</span>
+                <span>&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                Yes, we have physical stores in select cities. Please visit our store locator page to find a store near you.
+            </div>
+        </div>
+    </div>
+    </main> 
+
+    <script src="assets/js/slides.js"></script> 
+    <script src="assets/js/script.js"></script> 
+
+    
+     <footer>
+        <p><strong>&copy; 2025 Kreatifunit Studio</strong></p>
+    </footer>
+</body>
+</html>
